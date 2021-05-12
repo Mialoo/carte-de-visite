@@ -1,0 +1,87 @@
+ /*reset*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #b7d5e3;
+}
+#titre{
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-family: verdana, helvetica, "sans-serif";
+	font-weight: bold;
+	font-size: 30px;
+	color: #031a24;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration-line: underline;
+}
+h1 {
+	margin: 40px;
+	padding: 40px;
+	font-family: verdana, helvetica, "sans-serif";
+	font-weight: bold;
+	color: #031a24;	
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration-line: underline;
+	
+}
+div {
+	font-family: tahoma, helvetica, "sans-serif";
+	color: #063449;
+	background-color: #b7d5e3;
+}
+table {
+	background-color: #07364c; /*rend tout le fond du tableau bleu, utilisé pour remplir l'espace entre les bordures des cellules et du tableau*/
+	display: table;
+	justify-content: center;
+	border-collapse: separate !important;
+	width: 90%;
+	height: auto;
+	margin: 20px 50px;
+	table-layout: fixed;
+	border: 1px solid #07364c;
+	border-radius: 20px;
+}
+td {
+	background-color: #b7d5e3; /*remet le fond des cellules en bleu*/
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #07364c;
+	padding: 35px;
+	border-radius: 20px;
+}
+.vide {
+	border-style: none;
+}
+.description {
+	text-align: justify;
+	font-weight: lighter;
+}
+.texte {
+	/*décolle le texte du bord de la page*/
+	margin: 20px;
+	padding: 15px;
+}
+.competences{
+	/*fait apparaître les puces*/
+	margin: 20px;
+	padding: 20px; 
+}
+.lieu {
+	font-weight: lighter;
+	text-align: center;
+}
+.annees{
+	width: 22%;
+}
+.diplome{
+	width: 78%;
+}
+.poste{
+	width: 78%;
+}

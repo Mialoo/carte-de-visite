@@ -1,0 +1,164 @@
+/* reset css */
+* {
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+/* j'applique une couleur de fond sur toute la page */
+	background-color: #b7d5e3;
+/* j'applique une police d'écriture + police d'écriture de secours */
+	font-family: verdana, helvetica, "sans-serif";
+
+}
+
+h1 {
+
+	font-size: 22px;
+	color: #031a24;	
+	margin: 50px 0px 10px 20px
+}
+
+h2 {
+
+	float: left;
+	font-size: 20px;
+	color: #031a24;
+	margin: 50px 0px 10px 20px;
+}
+
+a {
+
+	text-decoration: none;
+	font-weight: bold;
+	color: #031a24;
+
+}
+
+/* j'enlève les puces des listes */
+ul {
+
+	list-style-type: none;
+}
+
+/* Je réduit la taille des logos au verso*/
+ul li img {
+
+	height: 30px;
+	width: 30px;
+
+}
+
+span {
+
+	color: red;
+
+}
+
+#identite {
+
+	position absolute;
+	float: left;
+
+}
+
+#photoidentite {
+
+/* Je déplace la photo à droite */
+	float: right;
+
+}
+
+#photoidentite img {
+
+	width: 200px;
+	height: 250px;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+#liste {
+
+	margin: 50px 50px 40px 50px;
+	font-size: 12px;
+	color: #031a24;
+
+}
+
+/* Je crée un effet "flip card" */
+.carte {
+	
+	margin: 200px auto;
+	background-color: transparent;
+	width: 400px;
+	height: 250px;
+/* effet 3D */
+	perspective: 1000px; 
+}
+
+/* Nécessaire pour positionner le recto et le verso */
+.interieurcarte {
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+/* Donne un effet 3D */
+	transform-style: preserve-3d;
+}
+
+/* Tourne la carte horizontalement quand la souris survole la carte */
+.carte:hover .interieurcarte {
+
+/* rotation sur l'axe y (= rotation horizontale */
+	transform: rotateY(180deg);
+}
+
+/* Positionne le recto et le verso */
+.rectocarte, .versocarte {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border: 1px solid #f1f1f1;
+/* effet d'ombre autour de la carte */
+	box-shadow: 0px 5px 20px #999;
+}
+
+.rectocarte {
+	
+/* Style de secours en cas de non chargement de l'image de fond */	
+	background-color: white;
+/* Style voulu */
+	background-image: url("background.jpg");
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.versocarte {
+
+/* Style de secours en cas de non chargement de l'image de fond */
+	background-color: white;
+/* necessaire pour l'effet "flip" */
+	transform: rotateY(180deg);
+/* Style voulu */
+	background-image: url("background.jpg");
+	background-position: center;
+	background-size: cover;
+
+}
+
+.logo {
+
+/* affiche les logos en ligne */
+	display: inline-block;
+/* les placent à droite */
+	float: right;
+	margin-left: 10px;
+
+}
