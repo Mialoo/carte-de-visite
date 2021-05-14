@@ -9,7 +9,7 @@ body {
 
 /* j'applique une couleur de fond sur toute la page */
 	background-color: #b7d5e3;
-/* j'applique une police d'écriture + police d'écriture de secours */
+/* j'applique une police d'écriture + police d'écriture de secours sur toute la page */
 	font-family: verdana, helvetica, "sans-serif";
 
 }
@@ -113,7 +113,7 @@ span {
 /* Tourne la carte horizontalement quand la souris survole la carte */
 .carte:hover .interieurcarte {
 
-/* rotation sur l'axe y (= rotation horizontale */
+/* rotation sur l'axe y = rotation horizontale */
 	transform: rotateY(180deg);
 }
 
